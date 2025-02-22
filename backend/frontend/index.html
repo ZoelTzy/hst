@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirim Email Verifikasi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Download Verification Code</h2>
+        <p>Masukkan informasi berikut untuk mengirim email verifikasi.</p>
+        <input type="email" id="senderEmail" placeholder="Email pengirim" required>
+        <input type="password" id="senderPassword" placeholder="Password pengirim" required>
+        <input type="email" id="recipientEmail" placeholder="Email penerima" required>
+        <textarea id="description" placeholder="Tambahkan deskripsi"></textarea>
+        <input type="text" id="fileLink" placeholder="Masukkan tautan file singkat">
+        <button onclick="sendEmail()">Kirim Email</button>
+        <p id="message"></p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
